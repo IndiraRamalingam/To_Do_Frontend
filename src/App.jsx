@@ -6,7 +6,6 @@ import SignUp from './components/Pages/SignUp'
 import ForgotPassword from './components/Pages/ForgotPassword'
 import ResetPassword from './components/Pages/ResetPassword'
 import CreateToDo from './components/ToDo/CreateToDo';
-import EditToDo from './components/ToDo/EditToDo';
 import ViewToDo from './components/ToDo/ViewToDo';
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
           <Route path='/forgot_password' element={<ForgotPassword />} />
           <Route path='/reset_password/:token' element={<ResetPassword />} />
           <Route path='/view_to_do/:id' element={<ViewToDo />} />
-          <Route path='/edit_to_do/:id' element={<EditToDo />} />
           <Route path='/create_to_do/:id' element={<CreateToDo />} />
           <Route path="/" element={<Navigate to="/signin" replace />} />
         </Routes>

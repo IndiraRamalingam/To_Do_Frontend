@@ -58,7 +58,7 @@ const signup =async({name,email,password}) =>{
 }
 
  const formStyles = {
-  background: "rgb(231 162 215 / 18%)",
+  background: "white",
     width: "40rem",
     borderRadius: "2.5rem", 
   };
@@ -67,7 +67,7 @@ const signup =async({name,email,password}) =>{
     <>
      <section className="container h-100">
       <div className="row d-flex justify-content-center align-items-center h-100">
-      <h1 className="mt-5 mb-5" style={{color:"rgb(92 209 39)",'fontWeight':'bolder','textAlign':'center',fontStyle:'italic'}}>To-Do App <span style={{fontSize:'18px',fontStyle:'italic',color:'#2cdbcb'}}>- Let's plan your day</span></h1>
+      <h1 className="mt-3 mb-5 p-3" style={{'background':'white',color:"rgb(92 209 39)",'fontWeight':'bolder','textAlign':'center',fontStyle:'italic'}}>To-Do App <span style={{fontSize:'18px',fontStyle:'italic',color:'#2cdbcb'}}>- Let's plan your day</span></h1>
       <div className="p-md-5" style={formStyles}>
           <Form onSubmit={handleSignup}>
              <div>
